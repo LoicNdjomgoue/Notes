@@ -1,0 +1,17 @@
+#p1 {
+  color: blueviolet;
+  margin-top: 50px;
+}
+#p2 {
+  border: 3px solid greenyellow;
+  color: cyan;
+  margin-bottom: 50px;
+  padding: 0px;
+  text-align: center;
+  width: 10%;
+}
+#p3 {
+  color: red;
+  margin-top: 50px;
+  font-size: 50px;
+}

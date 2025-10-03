@@ -1,0 +1,9 @@
+h1 {
+  text-shadow: 3px 3px 5px red, -3px -3px 5px blue; /* ( horizontal, vertical, blur, color ) ( use a coma to separate 2 shadows in one ) */
+}
+#box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  box-shadow: 3px 3px 5px;
+}

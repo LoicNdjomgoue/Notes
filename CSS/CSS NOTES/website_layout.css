@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+header {
+  background-color: lightgray;
+  text-align: center;
+  padding: 1px;
+}
+.navbar {
+  background-color: darkred;
+  height: 30px;
+}
+aside {
+  width: 20%;
+  float: left;
+  padding: 10px;
+  border: 5px solid green;
+}
+section {
+  width: 40%;
+  float: left;
+  padding: 10px;
+  border: 5px solid purple;
+}
+article {
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+footer {
+  display: block;
+  clear: both;
+  background-color: lightgray;
+  text-align: center;
+  padding: 25px;
+}
+@media screen and (max-width: 600px) {
+  aside,
+  section,
+  article {
+    width: 100%;
+  }
+}
+#home {
+  border: 2px;
+  border-style: solid;
+  border-color: yellow;
+  margin: 10px;
+}
+#about {
+  border: 5px dotted rgb(255, 13, 255);
+  padding: 30px;
+  margin-left: 60px;
+}
+#store {
+  margin-left: 50px;
+  border: 10px solid greenyellow;
+}

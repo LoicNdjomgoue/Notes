@@ -1,0 +1,32 @@
+div {
+  border: 2px solid blue;
+  margin: 5px;
+  padding: 5px;
+}
+span {
+  border: 2px solid red;
+  padding: 2px;
+}
+#test1 {
+  border: 2px solid rgb(255, 251, 10);
+  padding: 2px;
+}
+#test2 {
+  border: 2px solid rgb(255, 6, 255);
+  padding: 2px;
+}
+#test3 {
+  border: 2px solid rgb(13, 255, 5);
+  padding: 2px;
+}
+#test6 {
+  border: 2px solid rgb(4, 92, 26);
+}
+#test7 {
+  border: 1px solid rgb(214, 15, 8);
+  padding: 2px;
+}
+#test8 {
+  border: 2px solid rgb(188, 190, 24);
+  padding: 2px;
+}

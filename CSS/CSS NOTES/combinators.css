@@ -1,0 +1,15 @@
+#container {
+  border: 2px solid;
+}
+#container p /* descendants of container */ {
+  background-color: rgb(212, 212, 12);
+}
+#container > div > p /* child of div inside of div */ {
+  background-color: blue;
+}
+#container ~ p  /* p is a sibling to container because they are both in the body, but if p was under div, the sibling to container is div*/ {
+  background-color: red;
+}
+#container + p /* this changes only the next direct sibling, not all siblings */ {
+  background-color: purple;
+}

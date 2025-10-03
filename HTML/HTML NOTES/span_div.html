@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/CSS/CSS NOTES/div_span_style.css" />
+    <title>Div and Spans</title>
+  </head>
+  <body>
+    <!-- ===== DIV EXAMPLE ===== -->
+    <h3>Div Example:</h3>
+    <!-- Divs are block-level elements, and takes up the whole width -->
+    <!-- you can put a div within its self -->
+    <div>
+      First div (takes full width, starts a new line)
+      <div>
+        test1
+        <div>test4</div>
+      </div>
+    </div>
+    <div>
+      Second div (also takes full width, pushed below the first)
+      <div>
+        test2
+        <div>test5</div>
+      </div>
+    </div>
+
+    <!-- you can put a span in a div, but you can't put a div in a span -->
+    <div>
+      Third div (stacked below the second)
+      <div>
+        test3
+        <span id="test6"
+          >test6
+          <span id="test7">test7</span>
+        </span>
+        <span id="test8">test8</span>
+      </div>
+    </div>
+
+    <!-- ===== SPAN EXAMPLE ===== -->
+    <h3>Span Example:</h3>
+    <!-- Spans are inline elements -->
+    <!-- you can put a span within its self -->
+    <p>
+      This is <span>first span <span id="test1">test1</span></span>
+      <!-- sits inside the sentence -->
+      this is <span>second span <span id="test2">test2</span> </span>,
+      <!-- stays on the same line -->
+      and this is <span>third span <span id="test3">test3</span></span
+      >.
+      <!-- behaves like text -->
+    </p>
+  </body>
+</html>

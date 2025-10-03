@@ -1,0 +1,23 @@
+div {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+
+  /* displays text "inline" with the block */
+}
+#div2 {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  display: block;
+
+  /* takes up all the space, and the text is forced bellow it */
+}
+span {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  display: inline;
+  /* displays text wrapped with the block, can't use width and height and only takes up the space it needs*/
+}

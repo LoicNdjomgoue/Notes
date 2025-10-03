@@ -1,0 +1,14 @@
+/* this is how you comment in css, and " # " is how you reference an id in the html */
+
+#p1 {
+  color: blue;
+}
+#p2 {
+  color: deeppink;
+}
+.odd {
+  color: peru;
+}
+.even {
+  color: green;
+}

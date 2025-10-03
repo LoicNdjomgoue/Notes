@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin vs Padding Examples</title>
+    <link rel="stylesheet" href="/CSS/CSS NOTES/margin_padding.css" />
+  </head>
+  <body>
+    <!-- ======================= -->
+    <div class="section">
+      <h2>1. Margin Example (Outside Space)</h2>
+      <div class="box margin-example">This box has a 40px margin.</div>
+
+      <!-- Notes:
+      - Margin creates space OUTSIDE the border.
+      - Other elements are pushed away from this box.
+      - Think of margin as the "breathing room" around the box.
+    --></div>
+
+    <!-- ======================= -->
+    <div class="section">
+      <h2>2. Padding Example (Inside Space)</h2>
+      <div class="box padding-example">
+        This box has 40px padding.<br />
+        Notice how the text is pushed away from the border.
+      </div>
+
+      <!-- Notes:
+      - Padding creates space INSIDE the border.
+      - The content (text) moves inward, away from the box’s edges.
+      - Think of padding as the "cushioning" inside the box.
+    --></div>
+
+    <!-- ======================= -->
+    <div class="section">
+      <h2>3. Margin vs Padding Together</h2>
+      <div class="box margin-vs-padding">
+        Margin: 30px outside<br />
+        Padding: 30px inside
+      </div>
+
+      <!-- Notes:
+      - Margin separates this box from other elements.
+      - Padding makes the inside roomier before the text starts.
+      - Borders always "sit" between margin and padding.
+    --></div>
+
+    <!-- ======================= -->
+    <div class="section">
+      <h2>4. Side-by-Side Example</h2>
+
+      <div class="inline-box">Margin</div>
+      <div class="inline-box">Margin</div>
+      <br /><br />
+      <div class="inline-box-padding">Padding</div>
+      <div class="inline-box-padding">Padding</div>
+
+      <!-- Notes:
+      - Top row (green boxes): margin pushes the boxes apart from each other.
+      - Bottom row (pink boxes): padding makes the box look bigger inside,
+        but doesn’t add distance between the boxes.
+    --></div>
+  </body>
+</html>

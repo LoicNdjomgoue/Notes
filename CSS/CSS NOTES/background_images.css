@@ -1,0 +1,13 @@
+body {
+  background-image: url(/Images/avatar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* background-attachment = if the background scrolls or is fixed */
+  background-size: cover; /* cover = covers the whole background */
+}
+h1 {
+  color: white;
+}
+p {
+  color: white;
+}

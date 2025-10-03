@@ -1,0 +1,22 @@
+.gallery {
+  display: inline-block;
+  padding: 25px;
+  border: 1px solid darkgray;
+  margin: 5px;
+  width: 200px;
+}
+.gallery .description {
+  padding: 10px;
+  text-align: center;
+  color: red;
+}
+.gallery:hover {
+  border: 5px dotted red;
+}
+.gallery:hover .description {
+  color: blue;
+}
+.gallery img {
+  width: 100%;
+  max-height: 100px;
+}
