@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+}
+/*Translation*/
+    /* 
+    translatex() moves the element along the x-axis by the specified amount
+    translatey() moves the element along the y-axis by the specified amount
+    translate() moves the element along both x and y axis by the specified amounts
+    negative values can be used to move the element in the opposite direction (x-axis: left, y-axis: up)
+    positive values move the element right (x-axis) and down (y-axis)
+    
+    translate (50px, 100px) moves the element 50px to the right and 100px down
+    */
+
+    
+    /*Rotation*/
+    /*
+    rotate(angle) rotates the element clockwise by the specified angle
+    negative values rotate the element counter-clockwise
+    postive values rotate the element clockwise
+    e.g. rotate(20deg) rotates the element 20 degrees clockwise
+    */
+
+    /*Scaling*/
+    /*
+    scale(x,y) scales the element by the specified factors along the x and y axes
+    scale(x) scales the element by the specified factor along both x and y axes
+    values greater than 1 increase the size of the element
+    1 corresponds to 100% of the original size
+    1.5 corresponds to 150% of the original size etc.
+    values between 0 and 1 decrease the size of the element
+    scalex() and scaley() can also be used to scale the element along the x and y axes respectively
+    */
+
+    /*Skewing*/
+    /*
+    skew(x-angle, y-angle) skews the element by the specified angles along the x
+    and y axes
+    */
+#box1{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color: green;
+
+    transform: translate(500px,100px) rotate(50deg) scale(1.5);    
+}
+#box2{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color: blue;
+
+    transform: translate(500px,100px) rotate(50deg) scale(1.5);    
+}
+#box3{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color: red;
+
+    transform: translate(500px,100px) rotate(50deg) scale(1.5);
+}
+#box1:hover{
+    background-color: yellow;
+    transform: translate(500px,100px) rotate(50deg) scale(1.5) skew(20deg,20deg);
+}
+#box2:hover{
+    background-color: orange;
+    transform: translate(500px,100px) rotate(50deg) scale(1.5) skew(20deg,20deg);
+}
+#box3:hover{
+    background-color: purple;
+    transform: translate(500px,100px) rotate(50deg) scale(1.5) skew(20deg,20deg);
+}

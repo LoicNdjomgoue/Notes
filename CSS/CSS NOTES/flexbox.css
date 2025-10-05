@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: flex-start; /* only works when there are multiple lines of items */ /*removes the space in between the lines*/
+    /*
+    Justify-content: sets the alignment of items on the main axis (x-axis)
+    Align-items: sets the alignment of items on the cross axis (y-axis)
+    display: flex; makes the container a flex container
+    flex-direction: row | row-reverse | column | column-reverse; (default is row)
+    flex-wrap: wraps items to the next line if they overflow the container
+    align-content: aligns the flex lines when there is extra space in the cross-axis
+    */
+    overflow: auto; /* adds a scrollbar if the content overflows the container */
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#box1{
+    background-color: green;
+    order: 3; /* changes the order of the item in the flex container */ /* default is 0 */ /*negative values are left and positive values are right while zero is in the middle*/
+}
+#box2{
+    background-color: red;
+    order: -1;
+}
+#box3{
+    background-color: yellow;
+}
+#box4{
+    background-color: grey;
+}
