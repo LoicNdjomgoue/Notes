@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
-    <link rel="stylesheet" href="calculator.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="calculator.css" />
+    <!-- Link to external JS file, defer ensures script runs after HTML loads -->
     <script src="calculator.js" defer></script>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <!-- Main calculator container -->
     <div id="calculator">
-        <input id="display" readonly>
-        <div id="keys">
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('+')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('/')">/</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('0')">.</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="clearDisplay()">C</button>
-        </div>
+      <!-- Input field to show calculation/result, readonly prevents typing -->
+      <input id="display" readonly />
+
+      <!-- Container for all calculator buttons -->
+      <div id="keys">
+        <!-- Operator buttons with onclick to append operator to display -->
+        <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+
+        <!-- Number buttons -->
+        <!-- onclick runs Runs JavaScript when the button is clicked (pressed and released). -->
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+
+        <!-- More operator buttons -->
+        <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+
+        <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+
+        <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <!-- Equals button triggers calculation -->
+        <button onclick="calculate()">=</button>
+        <!-- Clear button resets display -->
+        <button onclick="clearDisplay()" class="operator-btn">C</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>

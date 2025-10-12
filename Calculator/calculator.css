@@ -1,25 +1,71 @@
-#calculator{
-    font-family:Arial, sans-serif;
-    background-color: hsl(0, 0%, 15%);
+/* Body styling: center calculator vertically & horizontally */
+body {
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  height: 100vh; /* Full viewport height */
+  background-color: hsl(0, 0%, 95%); /* Light gray background */
+}
 
+/* Calculator container styling */
+#calculator {
+  font-family: Arial, sans-serif; /* Text font */
+  background-color: hsl(0, 0%, 15%); /* Dark background */
+  border-radius: 15px; /* Rounded corners */
+  max-width: 500px; /* Max width */
+  overflow: hidden; /* Prevent overflow of inner elements */
 }
-#display{
-    width:100%;
+
+/* Display input styling */
+#display {
+  width: 100%; /* Full width */
+  padding: 10px; /* Space inside input */
+  font-size: 3rem; /* Large text for numbers */
+  text-align: left; /* Align text to left */
+  border: none; /* Remove default border */
+  background-color: hsl(0, 0%, 20%); /* Slightly lighter dark background */
+  color: white; /* Text color */
 }
-#keys{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 25px;
+
+/* Button container grid layout */
+#keys {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+  gap: 10px; /* Space between buttons */
+  padding: 15px; /* Padding around grid */
 }
-button{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: none;
-    background-color: hsl(0, 0%, 30%);
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
+
+/* Generic button styling */
+button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px; /* Rounded button shape */
+  border: none; /* Remove default border */
+  background-color: hsl(0, 0%, 30%); /* Dark gray background */
+  color: white; /* White text */
+  font-size: 2rem; /* Large number/operator text */
+  font-weight: bold;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+/* Pressed button effect */
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+/* Operator buttons special color */
+.operator-btn {
+  background-color: hsl(30, 100%, 50%); /* Orange */
+}
+.operator-btn:hover {
+  background-color: hsl(30, 100%, 65%);
+}
+.operator-btn:active {
+  background-color: hsl(30, 100%, 75%);
 }
