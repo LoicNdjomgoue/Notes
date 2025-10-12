@@ -21,3 +21,9 @@ span {
   display: inline;
   /* displays text wrapped with the block, can't use width and height and only takes up the space it needs*/
 }
+
+/* inline is used for text, block is used for sections */
+/*inline block is used for buttons and images */
+/*what is inline? inline is used for text, it doesn't take up the whole line, it only takes up the space it needs*/
+/*what is block? block takes up the whole line, it forces the text to go below it*/
+/*what is inline-block? inline-block is used for buttons and images, it takes up only the space it needs, but it can also have width and height*/ 

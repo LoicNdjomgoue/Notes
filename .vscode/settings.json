@@ -1,5 +1,6 @@
 {
   "java.debug.settings.onBuildFailureProceed": true,
   "java.project.sourcePaths": ["Java\\JAVA NOTES"],
-  "java.project.referencedLibraries": []
+  "java.project.referencedLibraries": [],
+  "liveServer.settings.port": 5501
 }
